@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .container{
+            background-color:rgb(78, 176, 221) ;;
+            border: 2px solid rgb(0, 255, 98);
+            padding:17px;
+            margin:14px;
+            /* We can set padding for top,botom,left and right like this  */
+            /* padding-top:79px; */
+            /* padding-bottom:79px; */
+            /* padding-right:79px; */
+            /* Same like for margin also  */
+            padding:55px 55px 55px 55px;/*T,R,B,L*/ /*SAME FOR MARGIN */
+            /* tHE BELOW PROPERTY IS USE TO FIX THE WIDTH WITHOUT CHAANGING IT  */
+            /* becausse width is the sum of margin,padding etc  */
+            box-sizing: border-box;
+            
+        }
+        /* "*" is the universal element  */
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            background-color: royalblue;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque unde odio itaque corporis reprehenderit molestias ad saepe! Eligendi eum ab amet nostrum nesciunt?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque unde odio itaque corporis reprehenderit molestias ad saepe! Eligendi eum ab amet nostrum nesciunt?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque unde odio itaque corporis reprehenderit molestias ad saepe! Eligendi eum ab amet nostrum nesciunt?</p>
+    </div>    
+</body>
+</html>

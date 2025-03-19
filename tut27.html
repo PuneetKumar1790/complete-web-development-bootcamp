@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiblitycand z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        /* z inddex work only when we determine the position rather than static */
+        #box1{
+            background-color: green;
+            position: relative;
+            top:100px;
+            z-index: -455px;
+        }
+        /* display none is used to delete the content  */
+        /* visiblity hidden is used to hide the space of content only / */
+        #box2{
+            /* visibility: hidden; */
+            background-color: red;
+            position: relative;
+            top: 5px;
+            z-index: 46px;
+        }
+        #box3{
+            /* display:none; */
+            background-color:blue;
+        }
+        #box4{
+            background-color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    
+</body>
+</html>

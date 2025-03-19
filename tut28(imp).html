@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flwx Box</title>
+    <style>
+        /* to use flex box firstly we have to type display:flex  */
+        .container {
+            display: flex;
+            height: 544px;
+            border: 2px solid black;
+            width: 100%;
+            /* Flex properties for container  */
+            /* flex-direction: row; is a default  value  */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction:row; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: wrap;The default value is no-wrap */
+            /* flex-flow:wrap-reverse;Short Hand */
+            /* justify-content is used in horizontal direction only  */
+            /* justify-content: center; */
+            /* justify-content:space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            /* align-items is used in vertical direction only  */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* stretch is used to make even space between the content while changing the screen  */
+            /* align-items: stretch; */
+
+        }
+
+        .item {
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            width: 100px;
+            height: 100px;
+        }
+
+        #item1 {
+            /* fleex properties for a flex item  */
+            /* order is used to keep the element in the last  */
+            /* greater the order there is greater chance of element in the last  */
+            order: 1;
+        }
+
+        #item2 {
+            /* flex grow is used to add more length to the width during the re solution  */
+            /* flex-grow: 2; */
+            /* flex basis work according to the direction row-width,column-height */
+            flex-basis: 320px;
+
+        }
+
+        #item3 {
+            /* In flex-shrink:  the element  start shrinking whenwe change the resolution  ; */
+            flex-shrink: 2;
+            flex: 2 2 230px;
+            /*grow,shrink,basis*/
+            /* alisn work in y axis only  */
+            align-self: flex-end;
+            align-self: flex-start;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is flex box Tutorial</h3>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <!-- <div class="item" id="item4">Fourth box</div> -->
+        <!-- <div class="item" id="item5">Fifth box</div> -->
+        <!-- <div class="item" id="item6">Six box</div> -->
+    </div>
+
+</body>
+
+</html>

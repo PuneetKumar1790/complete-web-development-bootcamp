@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            /* vh,wh is used to take the full screen  */
+            height: 100vh;
+            border: 2px solid red;
+            font-size: 10px;
+        }
+
+        /* not working */
+        /* we have define the parent size before use em  */
+        #first {
+            font-size: 3em;
+            /* padding =90 it is the product of font sizw and padding     */
+            padding: 3em;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="First">This is First heading</h1>
+        <h1 id="Second">This is Second heading</h1>
+        <h1 id="Third">This is Third heading</h1>
+    </div>
+
+</body>
+
+</html>
